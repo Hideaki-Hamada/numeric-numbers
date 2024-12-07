@@ -56,13 +56,13 @@ def grafico(x, y):
     plt.ylabel("Valor de X")  # Etiqueta del eje Y
     plt.show()  # Muestra el gráfico
 
-# Definimos la función cuya raíz se desea encontrar
-def f(x):
-    return x ** 2 - 1  # Ejemplo: f(x) = x^2 - 1
+# Definimos la función  raiz
 
-# Definimos la derivada de la función
+def f(x):
+    return x**2 + np.log(x) - 4 * x  # f(x) = x^2 + ln(x) - 4x
+
 def df(x):
-    return 2 * x  # Derivada: f'(x) = 2x
+    return 2 * x + 1 / x - 4  # f'(x) = 2x + 1/x - 4
 
 # Solicitamos los valores al usuario
 Xo = float(input("Ingrese el valor inicial Xo: "))  # Valor inicial
